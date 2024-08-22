@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="antialiased font-Noto">
+    <header
+      class="py-5 px-7 flex items-center top-0 sticky z-[4] bg-white md:px-9 xl:py-3 xl:gap-48 xl:px-0"
+    >
+      <img
+        class="h-auto w-40 mr-auto xl:ml-auto xl:mr-0"
+        src="../dist/images/logo.svg"
+        alt=""
+      />
+      <span class="text-3xl mx-2 xl:hidden block">
+        <ion-icon
+          name="menu"
+          onclick="Menu(this)"
+          class="cursor-pointer"
+        ></ion-icon>
+      </span>
+      <ul
+        class="z-[-1] top-16 flex-row text-center text-xl opacity-0 transition-all ease-in duration-500 bg-white shadow-2xl w-full justify-center left-0 xl:hidden xl:static absolute"
+      >
+        <li class="list-none ml-auto mr-auto my-6 xl:my-0">
+          <p class="cursor-pointer hover:effect">Home</p>
+        </li>
+        <li class="list-none my-6 xl:my-0">
+          <p class="cursor-pointer hover:effect">About</p>
+        </li>
+        <li class="list-none my-6 xl:my-0">
+          <p class="cursor-pointer hover:effect">Contact</p>
+        </li>
+        <li class="list-none my-6 xl:my-0">
+          <p class="cursor-pointer hover:effect">Blog</p>
+        </li>
+        <li class="list-none my-6 xl:my-0">
+          <p class="cursor-pointer hover:effect">Careers</p>
+        </li>
+      </ul>
+      <div id="navbar" class="hidden xl:flex xl:gap-7 xl:text-xs xl:opacity-55">
+        <li class="list-none">
+          <p class="cursor-pointer hover:effect">Home</p>
+        </li>
+        <li class="list-none">
+          <p class="cursor-pointer hover:effect">About</p>
+        </li>
+        <li class="list-none">
+          <p class="cursor-pointer hover:effect">Contact</p>
+        </li>
+        <li class="list-none">
+          <p class="cursor-pointer hover:effect">Blog</p>
+        </li>
+        <li class="list-none">
+          <p class="cursor-pointer hover:effect">Careers</p>
+        </li>
+      </div>
+      <button
+        class="hidden xl:flex xl:border xl:button-color xl:py-2 xl:px-6 xl:rounded-full xl:text-white xl:text-xs xl:hover:button-effect xl:button-transition xl:mr-auto"
+      >
+        Request Invite
+      </button>
+
+      <script src="./app.js"></script>
+    </header>
+    <!-- Desktop -->
+    <section class="xl:flex xl:items-center xl:justify-center xl:gap-[40px]">
+      <div class="hidden xl:block xl:ml-auto">
+        <p class="xl:text-5xl xl:tracking-wide">Next generation</p>
+        <p class="xl:text-5xl xl:tracking-wide">digital banking</p>
+        <div class="xl:text-xs xl:opacity-55 xl:tracking-wide mt-5">
+          <p>Take your financial life online. Your Easybank account</p>
+          <p>will be a one-stop-shop for spending, saving,</p>
+          <p>budgeting, investing, and much more.</p>
+        </div>
+        <button
+          class="xl:border xl:button-color xl:py-2 xl:px-6 xl:rounded-full xl:text-white xl:text-xs xl:mt-6 xl:hover:button-effect xl:button-transition"
+        >
+          Request Invite
+        </button>
+      </div>
+      <!--  -->
+      <div class="relative z-[2] flex">
+        <img
+          class="h-auto w-full md:hidden xl:hidden"
+          src="../dist/images/bg-intro-mobile.svg"
+          alt=""
+        />
+        <img
+          class="hidden md:max-xl:flex md:max-xl:w-auto md:max-xl:h-[750px] md:max-xl:ml-auto md:max-xl:mr-auto xl:flex xl:h-auto xl:w-[730px]"
+          src="../dist/images/bg-intro-desktop.svg"
+          alt=""
+        />
+        <img
+          class="absolute h-auto w-full md:max-xl:mt-[60px] md:max-xl:left-[99px] md:max-xl:mb-8 md:max-xl:w-[600px] xl:w-[570px] xl:top-5 xl:left-[97px] xl:mb-8"
+          src="../dist/images/image-mockups.png"
+          alt=""
+        />
+      </div>
+      <!--  -->
+      <!-- Desktop -->
+
+      <div
+        class="mt-11 pt-5 pb-[70px] flex-row text-center justify-center mx-5 md:max-xl:mt-[53px] md:max-xl:pb-[80px] md:max-xl:mx-40 xl:hidden"
+      >
+        <div
+          class="text-[43px] leading-[47px] font-medium opacity-85 md:max-xl:text-[67px] md:max-xl:leading-[67px]"
+        >
+          <p>Next generation digital banking</p>
+        </div>
+        <div class="text-base leading-6 opacity-55 mt-4 px-2 md:max-xl:mt-5">
+          <p>
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+        </div>
+        <button
+          class="border button-color mt-5 py-[10px] px-[29px] rounded-full text-white text-[14px]"
+        >
+          Request Invite
+        </button>
+      </div>
+    </section>
+    <!-- why choose? -->
+    <section
+      class="grey flex-row text-center justify-center py-14 md:max-xl:py-20 xl:px-44 xl:pt-20 xl:pb-[70px] xl:py-0"
+    >
+      <div
+        class="px-6 pb-14 md:max-xl:mx-28 xl:pl-0 xl:mr-[450px] xl:pb-0 xl:text-left"
+      >
+        <p
+          class="text-[34px] md:max-xl:text-[44px] leading-10 opacity-85 xl:[27px] xl:mt-4"
+        >
+          Why choose Easybank?
+        </p>
+        <div class="text-base leading-6 opacity-55 mt-4 xl:text-[13px] xl:mt-3">
+          <p class="">
+            We leverage Open Banking to turn your bank account into your
+            financial hub. Control your finances like never before.
+          </p>
+        </div>
+      </div>
+      <!-- Online Banking -->
+      <div class="xl:flex xl:mt-14 xl:gap-10 xl:mr-16">
+        <div class="pb-14 px-5 md:max-xl:mx-28 xl:pb-0 xl:px-0 xl:text-left">
+          <img
+            class="ml-auto mr-auto md:max-xl:h-[90px] xl:h-[50px] xl:ml-0 xl:mr-0"
+            src="../dist/images/online-banking.svg"
+            alt=""
+          />
+          <p
+            class="my-4 text-2xl font-medium opacity-85 md:max-xl:text-3xl xl:my-0 xl:font-normal xl:mt-[19px] xl:mb-[10px] xl:text-[19px] xl:opacity-80"
+          >
+            Online Banking
+          </p>
+          <p
+            class="text-base leading-6 opacity-55 xl:text-[12px] xl:tracking-wide xl:leading-4 xl:opacity-50"
+          >
+            Our modern web and mobile applications allow you to keep track of
+            your finances wherever you are in the world.
+          </p>
+        </div>
+        <!-- Simple Budgeting -->
+        <div class="pb-14 px-5 md:max-xl:mx-28 xl:pb-0 xl:px-0 xl:text-left">
+          <img
+            class="ml-auto mr-auto md:max-xl:h-[90px] xl:h-[50px] xl:ml-0 xl:mr-0"
+            src="../dist/images/budgeting.svg"
+            alt=""
+          />
+          <p
+            class="my-4 text-2xl font-medium opacity-85 md:max-xl:text-3xl xl:my-0 xl:font-normal xl:mt-[19px] xl:mb-[10px] xl:text-[19px] xl:opacity-80"
+          >
+            Simple Budgeting
+          </p>
+          <p
+            class="text-base leading-6 opacity-55 xl:text-[12px] xl:tracking-wide xl:leading-4 xl:opacity-50"
+          >
+            See exactly where your money goes each month. Receive notifications
+            when you're close to hitting your limits.
+          </p>
+        </div>
+        <!-- Fast Onboarding -->
+        <div class="pb-14 px-5 md:max-xl:mx-28 xl:pb-0 xl:px-0 xl:text-left">
+          <img
+            class="ml-auto mr-auto md:max-xl:h-[90px] xl:h-[50px] xl:ml-0 xl:mr-0"
+            src="../dist/images/onboarding.svg"
+            alt=""
+          />
+          <p
+            class="my-4 text-2xl font-medium opacity-85 md:max-xl:text-3xl xl:my-0 xl:font-normal xl:mt-[19px] xl:mb-[10px] xl:text-[19px] xl:opacity-80"
+          >
+            Fast Onboarding
+          </p>
+          <p
+            class="text-base leading-6 opacity-55 xl:text-[12px] xl:tracking-wide xl:leading-4 xl:opacity-50"
+          >
+            We don't do branches. Open your account in minutes online and start
+            taking control of your finances right away.
+          </p>
+        </div>
+        <!-- Open API -->
+        <div class="px-5 md:max-xl:mx-28 xl:px-0 xl:text-left">
+          <img
+            class="ml-auto mr-auto md:max-xl:h-[90px] xl:h-[50px] xl:ml-0 xl:mr-0"
+            src="../dist/images/api.svg"
+            alt=""
+          />
+          <p
+            class="my-4 text-2xl font-medium opacity-85 md:max-xl:text-3xl xl:my-0 xl:font-normal xl:mt-[19px] xl:mb-[10px] xl:text-[19px] xl:opacity-80"
+          >
+            Open API
+          </p>
+          <p
+            class="text-base leading-6 opacity-55 xl:text-[12px] xl:tracking-wide xl:leading-4 xl:opacity-50"
+          >
+            Manage your savings, investments, pension, and much more from one
+            account. Tracking your money has never been easier.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Articles -->
+    <section
+      class="py-[80px] flex-row text-center justify-center xl:pt-14 xl:pb-0 xl:mx-48 xl:text-left"
+    >
+      <p
+        class="text-3xl tracking-normal opacity-85 mb-7 md:max-xl:text-[44px] xl:text-[27px] xl:tracking-wide xl:opacity-85"
+      >
+        Latest Articles
+      </p>
+      <div class="xl:flex xl:gap-6 xl:mt-9">
+        <div
+          class="text-start w-[305px] ml-auto mr-auto mb-16 md:max-xl:w-[400px] xl:w-[272px] xl:ml-0 xl:mr-0"
+        >
+          <img
+            class="h-auto w-[305px] md:max-xl:w-[400px] rounded-md ml-auto mr-auto"
+            src="../dist/images/currency.jpg"
+            alt=""
+          />
+          <div class="px-5 xl:px-3">
+            <p
+              class="text-[12px] opacity-50 mt-6 mb-[7px] md:max-xl:text-[13px] xl:text-[9px] xl:opacity-45 xl:cursor-pointer xl:hover:text-effect xl:text-transition"
+            >
+              By Claire Robinson
+            </p>
+            <div>
+              <p
+                class="text-[18px] font-medium opacity-85 mb-2 leading-6 md:max-xl:text-[19px] xl:leading-5"
+              >
+                Receive money in any currency with no fees
+              </p>
+              <p
+                class="text-sm leading-5 opacity-50 md:max-xl:text-[15px] xl:text-[11px] xl:opacity-55 xl:tracking-wide xl:leading-4"
+              >
+                The world is getting smaller ane we're becoming more mobile. So
+                why should you be forced to only receive money in a single....
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="text-start w-[305px] ml-auto mr-auto mb-16 md:max-xl:w-[400px] xl:ml-0 xl:mr-0">
+          <img
+            class="h-auto w-[305px] rounded-md ml-auto mr-auto md:max-xl:w-[400px]"
+            src="../dist/images/restaurant.jpg"
+            alt=""
+          />
+          <div class="px-5 xl:px-3">
+            <p
+              class="text-[12px] opacity-50 mt-6 mb-[7px] md:max-xl:text-[13px] xl:text-[9px] xl:opacity-45 xl:cursor-pointer xl:hover:text-effect xl:text-transition"
+            >
+              By Wilson Hutton
+            </p>
+            <div>
+              <p
+                class="text-[18px] font-medium opacity-85 mb-2 leading-6 md:max-xl:text-[19px] xl:leading-5"
+              >
+                Treat yourself without worrying about money
+              </p>
+              <p
+                class="text-sm leading-5 opacity-50 md:max-xl:text-[15px] xl:text-[11px] xl:opacity-55 xl:tracking-wide xl:leading-4"
+              >
+                Our simple budgeting feature allows you to separate out your
+                spending and set realistic limits each month. This means you....
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="text-start w-[305px] ml-auto mr-auto mb-16 md:max-xl:w-[400px] xl:ml-0 xl:mr-0">
+          <img
+            class="h-auto w-[305px] rounded-md ml-auto mr-auto md:max-xl:w-[400px]"
+            src="../dist/images/plane.jpg"
+            alt=""
+          />
+          <div class="px-5 xl:px-3">
+            <p
+              class="text-[12px] opacity-50 mt-6 mb-[7px] md:max-xl:text-[13px] xl:text-[9px] xl:opacity-45 xl:cursor-pointer xl:hover:text-effect xl:text-transition"
+            >
+              By Wilson Hutton
+            </p>
+            <div>
+              <p
+                class="text-[18px] font-medium opacity-85 mb-2 leading-6 md:max-xl:text-[19px] xl:leading-5"
+              >
+                Take your Easybank card wherever you go
+              </p>
+              <p
+                class="text-sm leading-5 opacity-50 md:max-xl:text-[15px] xl:text-[11px] xl:opacity-55 xl:tracking-wide xl:leading-4"
+              >
+                We want you to enjoy your travels. This is why we don't charge
+                any fees on purchases while you're abroad. We'll even show
+                you....
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="text-start w-[305px] ml-auto mr-auto mb-10 md:max-xl:w-[400px] xl:ml-0 xl:mr-0">
+          <img
+            class="h-auto w-[305px] rounded-md ml-auto mr-auto md:max-xl:w-[400px]"
+            src="../dist/images/confetti.jpg"
+            alt=""
+          />
+          <div class="px-5 xl:px-3">
+            <p
+              class="text-[12px] opacity-50 mt-6 mb-[7px] md:max-xl:text-[13px] xl:text-[9px] xl:opacity-45 xl:cursor-pointer xl:hover:text-effect xl:text-transition"
+            >
+              By Claire Robinson
+            </p>
+            <div>
+              <p
+                class="text-[18px] font-medium opacity-85 mb-2 leading-6 md:max-xl:text-[19px] xl:leading-5"
+              >
+                Our invite-only Beta accounts are now live!
+              </p>
+              <p
+                class="text-sm leading-5 opacity-50 md:max-xl:text-[15px] xl:text-[11px] xl:opacity-55 xl:tracking-wide xl:leading-4"
+              >
+                After a lot of hard work by the whole team, we're excited to
+                launch our closed beta. It's easy to request an invite through
+                the site....
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer
+      class="footer flex-row text-center py-8 text-white xl:px-44 xl:flex"
+    >
+      <div>
+        <img
+          class="h-auto w-[165px] ml-auto mr-auto xl:h-[53px]"
+          src="../dist/images/white logo.png"
+          alt=""
+        />
+        <div
+          class="flex gap-[14px] mb-7 xl:ml-[18px] xl:mt-4 xl:gap-3 xl:h-[18px] xl:opacity-85 xl:mb-0"
+        >
+          <img
+            class="h-[22px] ml-auto xl:cursor-pointer xl:hover:highlight xl:transition xl:h-auto xl:ml-0"
+            src="../dist/images/icon-facebook.svg"
+            alt=""
+          />
+          <img
+            class="h-[22px] xl:cursor-pointer xl:hover:highlight xl:transition xl:h-auto"
+            src="../dist/images/icon-youtube.svg"
+            alt=""
+          />
+          <img
+            class="h-[22px] xl:cursor-pointer xl:hover:highlight xl:transition xl:h-auto"
+            src="../dist/images/icon-twitter.svg"
+            alt=""
+          />
+          <img
+            class="h-[22px] xl:cursor-pointer xl:hover:highlight xl:transition xl:h-auto"
+            src="../dist/images/icon-pinterest.svg"
+            alt=""
+          />
+          <img
+            class="h-[22px] mr-auto xl:cursor-pointer xl:hover:highlight xl:transition xl:h-auto xl:mr-0"
+            src="../dist/images/icon-youtube.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="opacity-75 xl:flex xl:text-white xl:text-[12px] xl:mt-2 xl:opacity-85 xl:mr-auto"
+      >
+        <div class="xl:mx-[90px]">
+          <p
+            class="xl:cursor-pointer xl:hover:effect xl:hover:highlight xl:transition"
+          >
+            About Us
+          </p>
+          <p
+            class="my-2 xl:my-3 xl:cursor-pointer xl:hover:effect xl:hover:highlight xl:transition"
+          >
+            Contact
+          </p>
+          <p
+            class="xl:cursor-pointer xl:hover:effect xl:hover:highlight xl:transition"
+          >
+            Blog
+          </p>
+        </div>
+        <div>
+          <p
+            class="my-2 xl:my-0 xl:cursor-pointer xl:hover:effect xl:hover:highlight xl:transition"
+          >
+            Careers
+          </p>
+          <p
+            class="xl:my-3 xl:cursor-pointer xl:hover:effect xl:hover:highlight xl:transition"
+          >
+            Support
+          </p>
+          <p
+            class="mt-2 mb-5 xl:cursor-pointer xl:hover:effect xl:hover:highlight xl:transition xl:mt-0 xl:mb-0"
+          >
+            Privacy Policy
+          </p>
+        </div>
+      </div>
+      <div>
+        <button
+          class="button-color mt-2 mb-6 py-[10px] px-[29px] rounded-full text-white text-[14px] xl:mb-0 xl:py-2 xl:px-6 text-xs xl:mt-1 xl:hover:button-effect xl:button-transition"
+        >
+          Request Invite
+        </button>
+        <p
+          class="opacity-40 text-sm xl:text-[11px] xl:text-white xl:opacity-50 xl:tracking-wide xl:-ml-9 xl:mt-6"
+        >
+          @ Easybank. All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+        e.name === "menu"
+          ? ((e.name = "close"), list.classList.add("opacity-100"))
+          : ((e.name = "menu"), list.classList.remove("opacity-100"));
+      }
+    </script>
+  </body>
+</html>
